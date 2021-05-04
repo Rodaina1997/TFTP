@@ -1,7 +1,6 @@
 # TFTP
-It is a Trivial file transfer protcol
-A project to simulate the TFTP client in python
-Prcotol summary
+It is a Trivial file transfer protcol,
+A project to simulate the TFTP client in python,
 The protocol operation occurs in two steps 1) Connection establishment 2) Data transfer
 > Connection establishment
 Connections are initiated by clients by sending either a read request (RRQ) to download files from the server or sending a write request (WRQ) to upload files to the server. Those requests will be sent to the default server port which is 69.
