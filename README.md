@@ -13,9 +13,9 @@ The protocol operation occurs in two steps: <br />
 1-File existence on server <br />
 2-The client sending data to the main socket on port 69 <br />
 Here are two examples of connection initiation
-> Host  A  sends  a  "RRQ"  to  SERVER  with  source= A's PORT, destination= MAIN_SERVER_PORT.
-< SERVER sends a "DATA" (with block number= 1) to host A with source= SERVER's NEW_SOCKET_PORT, destination= A's PORT.
->> Host A sends  a  "WRQ"  to  SERVER  with  source=  A's  PORT, destination= MAIN_SERVER_PORT.
-<< SERVER  sends  a "ACK" (with block number= 0) to host A with source= SERVERS's NEW_SOCKET_PORT, destination= A's PORT.
+-Host  A  sends  a  "RRQ"  to  SERVER  with  source= A's PORT, destination= MAIN_SERVER_PORT.
+-SERVER sends a "DATA" (with block number= 1) to host A with source= SERVER's NEW_SOCKET_PORT, destination= A's PORT.
+-Host A sends  a  "WRQ"  to  SERVER  with  source=  A's  PORT, destination= MAIN_SERVER_PORT.
+-SERVER  sends  a "ACK" (with block number= 0) to host A with source= SERVERS's NEW_SOCKET_PORT, destination= A's PORT.
 2)Data Transfer: <br />
 Data transfer happens between two entities, one of them sends data and the other sends an ACK for each data packet sent. 
